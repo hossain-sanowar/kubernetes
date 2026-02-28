@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment # same as replicaset, only change here
+metadata:
+  name: myapp-replicaset
+  labels:
+    app: myapp
+    type: front-end
+
+spec:
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
+  replicas: 6
+  selector:
+    matchLabels:
+      type: front-end
+
+kubectl apply -f deployment.yaml
+
+kubectl get deployments
+kubectl get rs
+kubectl get pods
+
+kubectl get all
