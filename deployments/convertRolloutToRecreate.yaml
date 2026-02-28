@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: default
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      name: webapp
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        name: webapp
+    spec:
+      containers:
+      - image: kodekloud/webapp-color:v2
+        name: simple-webapp
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+
+
+# Steps :-
+## 1. Use kubectl edit command to edit the deployment:
+
+kubectl describe deployment
+kubectl edit deployment frontend
+
+## 2. Then modify the spec.strategy section to:
+
+strategy:
+  type: Recreate
+
+## 3. and remove any existing rollingUpdate block. Save and exit to apply the changes.
+
+## 4. Verify the deployment strategy:
+
+kubectl describe deployment frontend | grep StrategyType
+
+## 5. You should see:
+
+StrategyType:  Recreate
+
+## Run the command kubectl edit deployment frontend to modify the necessary field. Additionally, 
+## ensure that you delete the properties of rollingUpdate found at spec.strategy.rollingUpdate.

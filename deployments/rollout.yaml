@@ -16,6 +16,13 @@ kubectl rollout history deployment/myapp-deployment
 
 # change image
 kubectl set image deployment/myapp-deployment nginx-container=nginx:1.12-perl
+
+kubectl get deployment
+kubectl describe deployment
+kubectl set image deploy frontend simple-webapp=kodekloud/webapp-color:v2 # or below one
+kubectl edit deployment frontend
+
+
 kubectl rollout status deployment/myapp-deployment
 kubectl rollout history deployment/myapp-deployment
 
