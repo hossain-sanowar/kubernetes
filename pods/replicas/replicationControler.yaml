@@ -18,3 +18,9 @@ spec:
         - name: nginx-container
           image: nginx
   replicas: 3
+
+  kubectl create -f replicationControler.yaml
+  kubectl get replicationControler
+
+  kubectl get pods
+  
