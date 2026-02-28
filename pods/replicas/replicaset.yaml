@@ -25,3 +25,4 @@ kubectl apply -f replicaset.yaml
 
 kubectl scale --replicas=6 replicaset.yaml
 kubectl scale --replicas=6 replicaset myapp-replicaset
+kubectl scale replicaset <name> --replicaset=2
