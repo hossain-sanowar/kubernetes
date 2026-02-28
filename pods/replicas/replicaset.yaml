@@ -20,3 +20,8 @@ spec:
   selector:
     matchLabels:
       type: front-end
+
+kubectl apply -f replicaset.yaml
+
+kubectl scale --replicas=6 replicaset.yaml
+kubectl scale --replicas=6 replicaset myapp-replicaset
