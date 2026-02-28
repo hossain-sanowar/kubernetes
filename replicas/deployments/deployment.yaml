@@ -28,3 +28,7 @@ kubectl get rs
 kubectl get pods
 
 kubectl get all
+
+#rollout:
+kubectl rollout status deployment/myapp-deployment
+kubectl rollout history deployment/myapp-deployment
