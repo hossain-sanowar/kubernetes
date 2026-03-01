@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker
+  labels:
+    app: worker
+
+spec:
+  containers:
+    - name: worker
+      image: dockersamples/examplevotingapp_vote
+      # ports: # we don't need the service port because worker has no service
+      #   - containerPort: 80
+      #     name: vote
