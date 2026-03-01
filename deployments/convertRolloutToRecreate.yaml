@@ -46,3 +46,5 @@ StrategyType:  Recreate
 
 ## Run the command kubectl edit deployment frontend to modify the necessary field. Additionally, 
 ## ensure that you delete the properties of rollingUpdate found at spec.strategy.rollingUpdate.
+
+kubectl describe deployment frontend | grep Image
