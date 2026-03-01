@@ -14,3 +14,13 @@ kubectl get node -o wide # get ip address and go to browser for accessing the se
 
 IP address: port like 31000 for voting
 IP address: port like 31001 for showing the voting result
+
+
+we need service from:
+1. voting-app
+2. redis
+3. postgres
+4. result-app
+
+but worker is not providing any service. it has processed the activities.
+![alt text](image.png)
