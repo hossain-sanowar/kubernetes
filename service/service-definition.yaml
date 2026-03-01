@@ -10,4 +10,10 @@ spec:
       nodePort: 30004 #node port, range: 30000-32767
   selector:
     app: myapp+
-    
+
+
+
+kubectl create -f service-definition.yaml
+kubectl get pods
+kubectl get service/svc
+kubectl get deployments
