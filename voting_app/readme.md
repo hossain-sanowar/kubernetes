@@ -24,3 +24,5 @@ we need service from:
 
 but worker is not providing any service. it has processed the activities.
 ![alt text](image.png)
+![alt text](image-1.png)
+
