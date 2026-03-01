@@ -26,3 +26,4 @@ but worker is not providing any service. it has processed the activities.
 ![alt text](image.png)
 ![alt text](image-1.png)
 
+kubectl delete -f . # delete all for voting apps
