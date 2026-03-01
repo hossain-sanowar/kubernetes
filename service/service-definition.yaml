@@ -7,4 +7,7 @@ spec:
   ports:
     - port: 80 #container port
       targetPort: 80 #service port
-      nodePort: 30004 #node port
+      nodePort: 30004 #node port, range: 30000-32767
+  selector:
+    app: myapp+
+    
