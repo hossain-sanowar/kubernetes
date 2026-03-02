@@ -1,1 +1,4 @@
 kubectl get pods
+kubectl get pods -o wide # get node information
+kubectl describe pod <name> # get details of pod
+kubectl create -f pod-definition.yaml
