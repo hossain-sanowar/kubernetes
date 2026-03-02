@@ -10,3 +10,5 @@ kubectl run redis --image=redis --dry-run=client -o yaml>redis-definition.yaml
 
 kubectl get --help
 kubectl run --help
+
+kubectl edit pod redis
