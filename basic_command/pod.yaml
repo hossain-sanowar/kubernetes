@@ -7,3 +7,6 @@ kubectl apply -f pod-definition.yaml
 kubectl run nginx --image=nginx
 
 kubectl run redis --image=redis --dry-run=client -o yaml>redis-definition.yaml
+
+kubectl get --help
+kubectl run --help
