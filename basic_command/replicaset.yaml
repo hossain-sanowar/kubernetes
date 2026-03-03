@@ -1,1 +1,2 @@
 kubectl get replicaset
+kubectl edit replicaset new-replica-set
