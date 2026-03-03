@@ -1,3 +1,6 @@
 kubectl get namespace
 kubectl get ns
 kubectl get ns --no-headers | wc -l
+kubectl get pods --namespace=research
+kubectl get pods --all-namespaces
+kubectl get pods --all-namespaces | grep blue
