@@ -1,3 +1,6 @@
 kubectl get replicaset
 kubectl edit replicaset new-replica-set
 kubectl scale replicaset new-replicaset --replicas=5
+
+kubectl replicaset --help
+kubectl describe replicaset new-replicaset | grep -i --image
