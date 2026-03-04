@@ -12,3 +12,5 @@ kubectl get --help
 kubectl run --help
 
 kubectl edit pod redis
+
+kubectl logs pods
