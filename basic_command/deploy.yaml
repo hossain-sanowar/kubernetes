@@ -2,3 +2,5 @@ kubectl get deploy
 kubectl describe deploy
 
 kubectl deploy --help
+
+kubectl logs deploy
