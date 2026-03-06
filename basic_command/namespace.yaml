@@ -10,4 +10,7 @@ kubectl logs namespace
 Run the command kubectl get pods --all-namespaces
 Run the command kubectl get pods --all-namespaces | grep blue
 
- kubectl -n research get pods --no-headers | wc -l
+kubectl -n research get pods --no-headers | wc -l
+
+Run the command kubectl get pods --namespace=research
+Run the command to get exact the number of pods in the research namespace
