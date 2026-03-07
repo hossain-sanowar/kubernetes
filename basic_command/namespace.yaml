@@ -14,3 +14,5 @@ kubectl -n research get pods --no-headers | wc -l
 
 Run the command kubectl get pods --namespace=research
 Run the command to get exact the number of pods in the research namespace
+
+Run the command kubectl get pods --all-namespaces | grep blue
