@@ -21,3 +21,4 @@ Install minikube:
 Minikube status
 
 Kubectl create deployment hello-minikube
+kubectl create deployment nginx --image=nginx
