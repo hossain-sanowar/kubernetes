@@ -7,3 +7,4 @@ kubectl logs deploy
 
 Kubectl get replicaset
 kubectl edit replicaset new-replica-set
+kubectl scale replicaset new-replica-set --replicas=5
