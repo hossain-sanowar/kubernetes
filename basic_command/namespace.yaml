@@ -19,3 +19,5 @@ Run the command kubectl get pods --all-namespaces | grep blue
 
 Install minikube:
 Minikube status
+
+Kubectl create deployment hello-minikube
