@@ -6,3 +6,4 @@ kubectl deploy --help
 kubectl logs deploy
 
 Kubectl get replicaset
+kubectl edit replicaset new-replica-set
