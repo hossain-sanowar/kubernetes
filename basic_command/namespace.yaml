@@ -22,3 +22,5 @@ Minikube status
 
 Kubectl create deployment hello-minikube
 kubectl create deployment nginx --image=nginx
+
+Minikube service hello-minikube --url  # copy ip and paste in browser to see
