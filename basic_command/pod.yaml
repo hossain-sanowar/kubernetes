@@ -16,3 +16,5 @@ kubectl edit pod redis
 kubectl logs pods
 
 Kubectl create -f pod-definition.yml
+
+kubectl run redis --image=redis123 --dry-run=client -o yaml>redis-definition.yaml
