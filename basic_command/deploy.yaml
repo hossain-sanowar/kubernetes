@@ -10,3 +10,5 @@ kubectl edit replicaset new-replica-set
 kubectl scale replicaset new-replica-set --replicas=5
 
 kubectl rollout status deployment/myapp-deployment
+
+kubectl describe deployment frontend | grep Image
