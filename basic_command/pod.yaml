@@ -14,3 +14,5 @@ kubectl run --help
 kubectl edit pod redis
 
 kubectl logs pods
+
+Kubectl create -f pod-definition.yml
