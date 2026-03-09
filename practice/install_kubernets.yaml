@@ -31,3 +31,6 @@ kubectl get nodes
 
 # then join the node uisng the join token
 
+# then add network policy like flannel
+
+kubectl get pod -A
