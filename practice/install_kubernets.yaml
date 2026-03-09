@@ -1,2 +1,13 @@
 # documentation install kubeadm
 # install container runtime; copy and paste command control and node
+
+ssh node01
+cat /etc/*-release 
+sudo apt-get update
+
+
+
+# control plane
+cat /etc/*-release # see the windows
+sudo apt-get update
+sudo apt-get install
