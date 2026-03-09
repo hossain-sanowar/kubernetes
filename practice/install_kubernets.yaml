@@ -21,3 +21,13 @@ kubelet --version
 kubectl get nodes
 
 
+ip add
+kubeadm init --apiserver-advertise-address=192.7.229.6 --pod-network-cidr=10.244.0.0/16
+
+then create cluster
+ 
+kubectl get nodes
+
+
+# then join the node uisng the join token
+
