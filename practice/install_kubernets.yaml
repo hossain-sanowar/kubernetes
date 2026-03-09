@@ -4,10 +4,15 @@
 ssh node01
 cat /etc/*-release 
 sudo apt-get update
-
+mkdir etc/apt/keyrings
 
 
 # control plane
 cat /etc/*-release # see the windows
 sudo apt-get update
 sudo apt-get install
+mkdir etc/apt/keyrings
+then install one by one
+
+sudo apt install kubeadm=26.0-00
+
