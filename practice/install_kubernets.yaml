@@ -16,3 +16,8 @@ then install one by one
 
 sudo apt install kubeadm=26.0-00
 
+
+kubelet --version
+kubectl get nodes
+
+
